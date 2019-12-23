@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <com.stx.xhb.androidx.XBanner
+        app:AutoPlayTime="4000"
+        app:pointsContainerBackground="#fff"
+        app:pointsPosition="RIGHT"
+        app:isShowIndicatorOnlyOne="true"
+        app:isShowNumberIndicator="true"
+        app:pageChangeDuration="800"
+        android:id="@+id/ufo_recommend_xBanner"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"/>
+    <ImageView
+        android:id="@+id/ufo_title_pic"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ufo_recommend"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"/>
+    <ImageView
+        android:id="@+id/ufo_center_pic"
+        android:padding="2dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ufo_img2"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"/>
+    <ImageView
+        android:id="@+id/ufo_bottom_pic"
+        android:scaleType="fitXY"
+        android:src="@mipmap/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"/>
+
+</LinearLayout>

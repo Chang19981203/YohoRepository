@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff">
+    <TextView
+        android:id="@+id/brand_bottom_title"
+        android:textStyle="bold"
+        android:background="#F4F4F4"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:paddingLeft="10dp"
+        android:text="A"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="500dp"
+        android:layout_height="30dp">
+        <TextView
+            android:id="@+id/brand_bottom_name"
+            android:textSize="16sp"
+            android:paddingLeft="15dp"
+            android:gravity="center_vertical"
+            android:text="信息"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"/>
+        <RelativeLayout
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/brand_bottom_hot"
+                android:visibility="invisible"
+                android:src="@mipmap/brand_hot"
+                android:layout_width="40dp"
+                android:layout_height="30dp"/>
+            <ImageView
+                android:visibility="invisible"
+                android:id="@+id/brand_bottom_new"
+                android:src="@mipmap/brand_new"
+                android:layout_width="40dp"
+                android:layout_height="30dp"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+    <TextView
+        android:background="#000"
+        android:layout_width="500dp"
+        android:layout_height="0.5dp"/>
+
+
+</LinearLayout>

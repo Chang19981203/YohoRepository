@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.google.android.material.tabs.TabLayout
+                app:tabMode="scrollable"
+                app:tabSelectedTextColor="#000"
+                android:id="@+id/brand_title_tab"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+
+            <LinearLayout
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="48dp">
+                <EditText
+                    android:focusable="false"
+                    android:paddingLeft="15dp"
+                    android:hint="🔍搜索品牌"
+                    android:background="@drawable/brand_search_shape"
+                    android:id="@+id/brand_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+            <com.youth.banner.Banner
+                android:id="@+id/brand_title_banner"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"/>
+            <TextView
+                android:background="#E7E5E5"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/brand_center_recycle"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"/>
+            <TextView
+                android:background="#E7E5E5"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/brand_center_tab"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginBottom="56dp"
+                android:id="@+id/brand_bottom_recycle"
+                android:layout_width="match_parent"
+                android:layout_height="640dp"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+        <qdx.indexbarlayout.IndexLayout
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/brand_right_index"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+</RelativeLayout>

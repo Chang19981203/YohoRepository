@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="255dp">
+            <ImageView
+                android:scaleType="fitXY"
+                android:src="@mipmap/mine_background"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"/>
+
+            <RelativeLayout
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <ImageView
+                    android:id="@+id/mine_exit"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/mine_set"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"/>
+
+                <LinearLayout
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_marginRight="5dp"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/mine_er"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"/>
+                    <ImageView
+                        android:layout_marginRight="5dp"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/mine_message"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"/>
+                    <ImageView
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/mine_transpond"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:background="@drawable/mine_linear_background"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="80dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/black"
+                    android:text="ChangShuai"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="70dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="潮流就是我的态度"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="3dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="成长值：0"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="3dp"/>
+            </LinearLayout>
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@mipmap/mine_user_img"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"/>
+
+
+
+
+            <RadioGroup
+                android:id="@+id/mine_cut_rg"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="150dp"
+                android:layout_height="30dp">
+                <RadioButton
+                    android:checked="true"
+                    android:id="@+id/mine_com_rb"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:textColor="@drawable/mine_center_text"
+                    android:background="@drawable/mine_center_rg"
+                    android:textAlignment="center"
+                    android:text="社区"
+                    android:button="@null"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"/>
+
+                <RadioButton
+                    android:id="@+id/mine_shopping_rb"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="@drawable/mine_center_text"
+                    android:background="@drawable/mine_center_rg"
+                    android:textAlignment="center"
+                    android:text="商城"
+                    android:button="@null"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"/>
+
+
+            </RadioGroup>
+
+        </RelativeLayout>
+        <com.example.yohoshop.mvp.ui.view.MyMineViewPger
+            android:id="@+id/mine_viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="1300dp"/>
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
